@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="stylesheet3.css">
+	</head>
+	<body>
+		<script>
+			function interest()
+			{
+				p=document.getElementById("p").value;
+				r=document.getElementById("r").value;
+				t=document.getElementById("t").value;
+				si=document.getElementById("si");
+				si.innerHTML="Result: "+(p*r*t/100);
+				
+			}
+</script>
+<center>
+<table bgcolor="#566573";>
+<tr><td><h1>SIMPLE</h1></td><td><h1>INTEREST</h1></td></tr>
+<tr>
+<td>Enter the principle</td><td><input id="p"></td>
+</tr>
+<tr>
+<td>Enter the rate </td><td><input id="r"></td>
+</tr>
+<tr>
+<td>Enter the time </td><td><input id="t"></td></tr>
+<tr><td>
+<input type="button" onclick="interest()" value="Calculate"></td>
+<td><p id="si"></p></td>
+</tr>
+</table>
+</center>
+</body>
+</html>
