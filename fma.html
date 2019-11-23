@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<script src="jqer.js"></script>
+		<script>
+		$(document).ready(function()
+		{
+			$("#b").click(function()
+			{
+				ma=$("#m").val();
+				ac=$("#a").val();
+				f=ma*ac;
+				re="Result: "+f;
+				$("#f1").text(re);
+			});
+		});
+			
+		</script>
+	</head>
+	<body>
+	<table>
+	<tr>
+	<td>Enter acc</td><td><input type="text" id="a" /></td>
+	</tr>
+	<tr>
+	<td>Enter mass</td><td><input type="text" id="m" /></td>
+	</tr>
+	<tr>
+	<td><input type="button" value="Calculate Force" id="b"></td>
+	<td><div id="f1"></div></td>
+	</tr>
+	</table>
+	</body>
+</html>
