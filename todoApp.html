@@ -1,0 +1,54 @@
+<html>
+<head>
+	<script src="jqer.js"></script>
+	<script>
+	$(document).ready(function()
+	{
+		$("#mybtn").click(function()
+				{
+					name=$("#nametxt").val();
+					$("#ul1").append("<div id='div1' style=\"border-left: #fb641b 5px solid\">"+name+
+					"<img src='bin4.png'></img></div>");
+					$("#div1").click(function()
+					{
+						$(this).slideUp(300);
+					 });
+				});
+	});
+	</script>
+		<style>
+		h1
+		{
+		color:orange;
+		}
+		#mybtn
+		{
+		position: relative;
+		margin-left:-15px;
+		border-radius:50%;
+		
+		}
+		#childbox{
+			background:#E9EAD2;
+			margin:2px;
+			width:500px;
+			padding:12px;
+		}
+		
+		
+</style>
+</head>
+<body>
+	<center>
+	<div id="childbox">
+	<h1>Todo App</h1>
+	<table>
+	<tr>
+	<td><input type="text" id="nametxt" placeholder="Add Todo"/></td>
+	<td><input type="image" src="download3.jpg" alt="avatar" width="48" height="48" id="mybtn"></td>
+	</table>
+	<ul type="none" id="ul1">
+	</ul>
+	</center>
+</body>
+</html>
